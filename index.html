@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JevX-Kit Privacy Policy</title>
+<meta name="description" content="Privacy policy for the JevX-Kit browser extension for x.com.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    padding: 40px 22px 70px;
+    max-width: 720px;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .date { opacity: .65; margin: 0 0 28px; font-size: 14px; }
+  h2 { font-size: 18px; margin: 30px 0 8px; }
+  ul { margin: 8px 0 0; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  p { margin: 8px 0 0; }
+  a { color: #1d6fd8; }
+  footer { margin-top: 40px; border-top: 1px solid currentColor; border-color: color-mix(in srgb, currentColor 20%, transparent); padding-top: 14px; font-size: 13.5px; opacity: .8; }
+</style>
+</head>
+<body>
+  <h1>JevX-Kit Privacy Policy</h1>
+  <p class="date">Effective date: September 19, 2026</p>
+
+  <p>JevX-Kit is a browser extension for x.com (Chrome and Firefox). It has two parts: <strong>JevX Pulse</strong>, which shows how likely a post is AI-written and can tag posts on click, and <strong>JevX Block</strong>, which hides ads and paid partnerships. This page explains what leaves your browser and what stays on your device.</p>
+
+  <h2>What the extension sends</h2>
+  <ul>
+    <li>When JevX Pulse is enabled and you have added an API key, the text of posts shown in your timeline is sent to the scoring provider you selected (OpenRouter or TypeSafe), using your own API key. The request includes the post text and, when available, the author handle. Tags for a post are requested only when you click its score mark. The same text is re-sent when a post is scored again after you clear the cache.</li>
+    <li>JevX Block sends nothing. It runs entirely in your browser.</li>
+  </ul>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>Your settings and the API key you enter are stored in your browser's extension storage. The key is used only by the extension's background process and is never exposed to the pages you visit.</li>
+    <li>Scores and tags are cached locally (about 30 days) so posts are not scored again on every scroll. You can clear this cache at any time in the extension settings.</li>
+  </ul>
+
+  <h2>What we do not collect</h2>
+  <ul>
+    <li>No analytics, no telemetry, no crash reporting, no advertising identifiers.</li>
+    <li>We operate no servers and receive no copy of the text you score. Scoring happens directly between your browser and the provider you configured.</li>
+    <li>We do not sell data, and we do not share it with anyone other than the scoring provider you chose, which processes each request to return a score. That provider's own privacy policy applies to its processing (see <a href="https://openrouter.ai/privacy" rel="noopener">OpenRouter</a> and <a href="https://www.typesafe.ai/" rel="noopener">TypeSafe</a>).</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <ul>
+    <li>Local data (settings, key, cached scores) lives only on your device. Clearing the cache removes stored scores and tags; uninstalling the extension removes everything.</li>
+    <li>We hold no data about you, so there is nothing for us to delete on our side.</li>
+  </ul>
+
+  <h2>Limited Use disclosure</h2>
+  <p>Our use of data complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+  <h2>Security</h2>
+  <p>Requests to scoring providers are sent over HTTPS. The extension asks for zero-data-retention routing where the provider supports it. Your API key never touches the x.com page or any other web page.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:sudodevphoenix@gmail.com">sudodevphoenix@gmail.com</a></p>
+
+  <footer>JevX-Kit is an independent extension and is not affiliated with X Corp.</footer>
+</body>
+</html>
