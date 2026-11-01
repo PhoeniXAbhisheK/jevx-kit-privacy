@@ -26,14 +26,14 @@
 </head>
 <body>
   <h1>JevX-Kit Privacy Policy</h1>
-  <p class="date">Effective date: September 19, 2026</p>
+  <p class="date">Effective date: November 1, 2026</p>
 
-  <p>JevX-Kit is a browser extension for x.com. It has two parts: <strong>JevX Pulse</strong>, which shows how likely a post is AI-written and can tag posts on click, and <strong>JevX Block</strong>, which hides ads and paid partnerships. This page explains what leaves your browser and what stays on your device.</p>
+  <p>JevX-Kit is a browser extension for x.com. It has two parts: <strong>JevX Pulse</strong>, which shows how likely a post is AI-written and can tag posts on click, and <strong>Hide AI posts</strong>, which can collapse posts that score above a level you choose. This page explains what leaves your browser and what stays on your device.</p>
 
   <h2>What the extension sends</h2>
   <ul>
-    <li>When JevX Pulse is enabled and you have added an API key, the text of posts shown in your timeline is sent to the scoring provider you selected (OpenRouter or TypeSafe), using your own API key. The request includes the post text and, when available, the author handle. Tags for a post are requested only when you click its score mark. The same text is re-sent when a post is scored again after you clear the cache.</li>
-    <li>JevX Block sends nothing. It runs entirely in your browser.</li>
+    <li>When JevX Pulse is enabled and you have added an API key, the text of posts shown in your timeline is sent to the scoring provider you selected (OpenRouter or TypeSafe), using your own API key. The request includes the post text and, when available, the author handle. Tags for a post are requested only when you click its score mark. The same text is re-sent when a post is scored again after you clear the cache. If you save keys for both providers and leave the provider choice on Automatic, a request the first provider rejects is sent again to the second provider. If you choose a preferred provider, only that provider receives your posts.</li>
+    <li>Hide AI posts sends nothing. It uses the scores already in your browser and runs entirely on your device.</li>
   </ul>
 
   <h2>What stays on your device</h2>
@@ -46,7 +46,7 @@
   <ul>
     <li>No analytics, no telemetry, no crash reporting, no advertising identifiers.</li>
     <li>We operate no servers and receive no copy of the text you score. Scoring happens directly between your browser and the provider you configured.</li>
-    <li>We do not sell data, and we do not share it with anyone other than the scoring provider you chose, which processes each request to return a score. That provider's own privacy policy applies to its processing (see <a href="https://openrouter.ai/privacy" rel="noopener">OpenRouter</a> and <a href="https://www.typesafe.ai/" rel="noopener">TypeSafe</a>).</li>
+    <li>We do not sell data, and we do not share it with anyone other than the scoring provider or providers you added keys for, which process each request to return a score. That provider's own privacy policy applies to its processing (see <a href="https://openrouter.ai/privacy" rel="noopener">OpenRouter</a> and <a href="https://www.typesafe.ai/" rel="noopener">TypeSafe</a>).</li>
   </ul>
 
   <h2>Data retention and deletion</h2>
@@ -59,7 +59,7 @@
   <p>Our use of data complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
 
   <h2>Security</h2>
-  <p>Requests to scoring providers are sent over HTTPS. The extension asks for zero-data-retention routing where the provider supports it. Your API key never touches the x.com page or any other web page.</p>
+  <p>Requests to scoring providers are sent over HTTPS. How long a provider retains request data is governed by that provider's own policy and your account settings with them. Your API key never touches the x.com page or any other web page.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
