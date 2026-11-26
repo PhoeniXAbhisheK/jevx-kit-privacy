@@ -26,20 +26,20 @@
 </head>
 <body>
   <h1>JevX-Kit Privacy Policy</h1>
-  <p class="date">Effective date: November 23, 2026</p>
+  <p class="date">Effective date: November 26, 2026</p>
 
-  <p>JevX-Kit is a browser extension for x.com. It includes <strong>JevX Pulse</strong>, which shows how likely a post is AI-written and can tag posts on click; <strong>Hide AI posts</strong>, which can collapse posts that score above a level you choose; and <strong>Post length</strong>, which shows the word count of long posts and lets you collapse them again. This page explains what leaves your browser and what stays on your device.</p>
+  <p>JevX-Kit is a browser extension for x.com. It includes <strong>JevX Pulse</strong>, which shows how likely a post is AI-written; <strong>Hide AI posts</strong>, which can collapse posts that score above a level you choose; and <strong>Post length</strong>, which shows the word count of long posts and lets you collapse them again. This page explains what leaves your browser and what stays on your device.</p>
 
   <h2>What the extension sends</h2>
   <ul>
-    <li>For scoring, when JevX Pulse is enabled and you have added an API key, the text of posts shown in your timeline is sent to the scoring provider you selected (OpenRouter or TypeSafe), using your own API key. The request includes the post text and, when available, the author handle. Tags for a post are requested only when you click its score mark. The same text is re-sent when a post is scored again after you clear the cache. If you save keys for both providers and leave the provider choice on Automatic, a request the first provider rejects is sent again to the second provider. If you choose a preferred provider, only that provider receives your posts.</li>
+    <li>For scoring, when JevX Pulse is enabled and you have added an API key, the text of posts shown in your timeline is sent to the scoring provider you selected (OpenRouter or TypeSafe), using your own API key. The request includes the post text and, when available, the author handle. The same text is re-sent when a post is scored again after you clear the cache. If you save keys for both providers and leave the provider choice on Automatic, a request the first provider rejects is sent again to the second provider. If you choose a preferred provider, only that provider receives your posts.</li>
     <li>Hide AI posts sends nothing. It uses the scores already in your browser and runs entirely on your device.</li>
   </ul>
 
   <h2>What stays on your device</h2>
   <ul>
     <li>Your settings and the API key you enter are stored in your browser's extension storage. The key is used only by the extension's background process and is never exposed to the pages you visit.</li>
-    <li>Scores and tags are cached locally (about 30 days) so posts are not scored again on every scroll. You can clear this cache at any time in the extension settings.</li>
+    <li>Scores are cached locally (about 30 days) so posts are not scored again on every scroll. You can clear this cache at any time in the extension settings.</li>
   </ul>
   <p>Post length. For long posts, JevX-Kit reads the post's text from data X has already loaded in the page and counts its words. This happens on your device. The text is not stored or sent anywhere for this feature, and it needs no API key.</p>
 
@@ -52,7 +52,7 @@
 
   <h2>Data retention and deletion</h2>
   <ul>
-    <li>Local data (settings, key, cached scores) lives only on your device. Clearing the cache removes stored scores and tags; uninstalling the extension removes everything.</li>
+    <li>Local data (settings, key, cached scores) lives only on your device. Clearing the cache removes stored scores; uninstalling the extension removes everything.</li>
     <li>We hold no data about you, so there is nothing for us to delete on our side.</li>
   </ul>
 
